@@ -348,3 +348,16 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+Susanin.Api/roadmap.db
+.idea/.idea.susanin/.idea/.name
+.idea/.idea.susanin/.idea/contentModel.xml
+.idea/.idea.susanin/.idea/encodings.xml
+.idea/.idea.susanin/.idea/indexLayout.xml
+.idea/.idea.susanin/.idea/modules.xml
+.idea/.idea.susanin/.idea/projectSettingsUpdater.xml
+.idea/.idea.susanin/.idea/riderModule.iml
+.idea/.idea.susanin/.idea/vcs.xml
+.idea/.idea.susanin/.idea/workspace.xml
+Susanin.Api/.DS_Store
+dotnet
+.DS_Store
