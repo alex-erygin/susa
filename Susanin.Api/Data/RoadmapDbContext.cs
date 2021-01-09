@@ -12,7 +12,7 @@ namespace Susanin.Api.Data
         
         
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite("Data Source=roadmap.db");
+            => options.UseSqlite("Data Source=database/roadmap.db");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

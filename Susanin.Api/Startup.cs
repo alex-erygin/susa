@@ -31,6 +31,17 @@ namespace Susanin.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "Susanin.Api", Version = "v1"});
             });
+            
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "MyAllowSpecificOrigins",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin();
+                        builder.AllowAnyHeader();
+                        builder.AllowAnyMethod();
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +57,7 @@ namespace Susanin.Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors("MyAllowSpecificOrigins");
 
             app.UseAuthorization();
 
